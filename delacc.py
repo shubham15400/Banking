@@ -35,11 +35,8 @@ def delete():
         call(["python","accountdeleted.py"])
         ROOT.destroy()
 ROOT= Tk()
-Label(ROOT,text='Account No').grid(row=0)
-Label(ROOT,text='Balance : ').grid(row=1)
-e1=Entry(ROOT)
+Label(ROOT,text='Account No').grid(row=0)e1=Entry(ROOT)
 e1.grid(row=0,column=1)
-e2=Entry(ROOT)
 Button(ROOT,text = 'Delete',width=20,command = delete).grid(row=2)
 Button(ROOT,text = 'Exit' ,width=20,command = ROOT.destroy).grid(row=2,column=1)
 
